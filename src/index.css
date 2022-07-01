@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -35,8 +40,15 @@ nav {
 
 .nav--title {
   font-weight: 600;
-  color: #deebf8;
+}
+
+a {
   text-decoration: none;
+  color: #deebf8;
+}
+
+.container {
+  min-height: calc(100vh - 70px);
 }
 
 main {
@@ -63,6 +75,29 @@ li::before {
   color: #61dafb;
   content: '▪';
   padding-right: 14px;
+}
+
+.footer {
+  height: 50px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #21222a;
+  height: 90px;
+  padding: 30px 25px;
+  color: #deebf8;
+}
+
+.teleg, .phone {
+  display: flex;
+  align-items: center;
+}
+
+.teleg > span, .phone > span {
+  margin: 10px;
 }
 
 .react {

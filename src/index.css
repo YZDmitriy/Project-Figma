@@ -60,21 +60,29 @@ main {
 }
 
 .main--text {
-  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39.06px;
+  line-height: 47px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
 }
 
 .main--ul {
-  margin-left: 170px;
+  margin-left: 220px;
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
+  line-height: 19px;
 }
 
-li {
-  list-style-type: none;
+ul > li {
+  padding-block: 10px;
 }
-li::before {
-  color: #61dafb;
-  content: '▪';
-  padding-right: 14px;
+
+li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;;
 }
 
 .footer {
@@ -91,12 +99,14 @@ li::before {
   color: #deebf8;
 }
 
-.teleg, .phone {
+.teleg,
+.phone {
   display: flex;
   align-items: center;
 }
 
-.teleg > span, .phone > span {
+.teleg > span,
+.phone > span {
   margin: 10px;
 }
 
